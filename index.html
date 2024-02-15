@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Abdullah's Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav" id="nav">
+
+            <div class="main_head" id="main_head">Abdullah's Portfolio</div>
+            <div class="nav_list" id="nav_list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#section-about-me">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+            <div class="ham_icon" id="ham_icon">
+                <img src="Assets/Hamburger Menu.svg" alt="">
+            </div>
+
+            <div class="nav_button" id="nav_button">
+                <a href="mailto:ak0344494@gmail.com" target="_blank"><button>Get In Touch</button></a>
+            </div>
+
+        </div>
+
+    </nav>
+    <div class="ham_icon_background" id="ham_icon_background">
+        <div class="ham_icon_list">
+
+            <ul>
+                <li><a href="#" onclick="displaynone()">Home</a></li>
+                <li><a href="#section-about-me" onclick="displaynone()">About Me</a></li>
+                <li><a href="#projects" onclick="displaynone()">Projects</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+
+    <div class="main_body">
+        <div class="main_para">
+            <p>
+                Hi, I'm <span class="purple">Abdullah </span>and i'm a <span id="element"></span>
+            </p>
+        </div>
+
+
+    </div>
+    <div class="about-me-head">
+        About Me
+    </div>
+    <section class="section-about-me" id="section-about-me">
+
+        <div class="about-me">
+
+
+            <div class="about-me-para">
+                <div data-aos="fade-right">
+
+                    I am a Front-end Developer, currently learning react. I love to develop aesthetic UI with pixel
+                    perfect dimensions. With my design skills that help me to develop better UI. I can develop any sort
+                    of complex UI either it is for web interface or mobile phone.
+                </div>
+                <div data-aos="fade-left">
+
+                    <div class="about-me-image">
+                        <img src="./Assets/header-image.svg">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <h3>Projects</h3>
+    <div data-aos="fade-up">
+
+        <section class="projects" id="projects">
+
+            <div class="project-1">
+
+                <div class="project-1-head">
+                    WeatherApp
+                </div>
+                <div class="project-1-content">
+
+                    <img src="./Assets/project-3.png" onclick="project_1_link()">
+
+                    <p>
+                        Developed a responsive weather application utilizing React, where users can obtain real-time weather information for a specific location. Implemented API integration to fetch weather data, enabling dynamic updates.
+                    </p>
+                </div>
+            </div>
+            <div class="project-2">
+                <div class="project-2-head">
+                    React Vite Todo List
+                </div>
+                <div class="project-2-content">
+
+                    <img src="./Assets/project-2.png" onclick="project_2_link()">
+                    <p>
+                        Built a dynamic and responsive todo-list application using React with the Vite framework, The
+                        application allows users to seamlessly add, complete, and remove tasks.
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+    <footer>
+        <div class="footer">
+            <p>Designed And Developed By <span class="copyright"> Abdullah.</span></p>
+            <div class="social-icons">
+
+                <a href="https://github.com/abdullah-Zzz" target="_blank"><img src="./Assets/Social Icons/Github.svg"
+                        class="github_icon"></a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer.'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
