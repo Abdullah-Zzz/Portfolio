@@ -19,7 +19,7 @@ function Hero() {
   <a href='https://github.com/Abdullah-Zzz' target='_blank' className='cursor-pointer'><img src={githubIcon} className="w-16" /></a>
   </div>
   <div className='border-2 border-white p-2 h-[70px] flex items-center justify-center' >
-    <a href='https://leetcode.com/u/AbdullahZzz/' className='cursor-pointer'><img src={lcodeIcon } className="w-16"/></a>
+    <a href='https://leetcode.com/u/AbdullahZzz/' target='_blank' className='cursor-pointer'><img src={lcodeIcon } className="w-16"/></a>
   </div>
   <div className='border-2 border-white p-2 h-[70px] flex items-center justify-center' >
   <a href='#' className='cursor-pointer'><img src={linkedinIcon} className="w-16"/></a>
